@@ -1,1 +1,15 @@
-/* You can add global styles to this file, and also import other style files */
+/*Import Oswald font from google fonts*/
+@import url(https://fonts.googleapis.com/css?family=Oswald:400,300,700);
+/*Import mono font from google fonts*/
+@import url(https://fonts.googleapis.com/css?family=Source+Code+Pro);
+/*Tailwind mains*/
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.button-standard{
+    @apply appearance-none bg-pink-500 text-white md:font-bold md:p-4 p-2 md:text-lg text-sm rounded-md cursor-pointer w-32 hover:bg-pink-700 transition-all ease-in-out;
+}
+.button-back{
+    @apply appearance-none bg-green-500 text-white md:font-bold md:p-4 p-2 md:text-lg text-sm rounded-md cursor-pointer w-32 hover:bg-green-700 transition-all ease-in-out;
+}
